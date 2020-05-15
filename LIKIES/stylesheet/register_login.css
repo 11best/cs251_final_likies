@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'ThaiSansNeue-Black';
+    src: url(../fonts/ThaiSansNeue-Black.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+::selection {
+    color: white;
+    background: #f26d7e;
+  }
+    
+*{
+    font-family: 'ThaiSansNeue-Black' !important; 
+    margin: 0;
+    padding: 0;  
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.error{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color:  #f15b6f;
+    font-size: large;
+}
+
+img {
+    display: block;
+    padding-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+  }
+
+.header{
+    font-size: x-large;
+    text-align: center;
+    margin : 10px 0px 15px 0px;
+}
+
+.loginblock{
+    margin: 0 35% 0 35%;
+    padding: 10px 30px 20px 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 5px 5px;
+    box-sizing: border-box;
+}
+
+.input-group{
+    font-size: large;
+    text-align: left;
+}
+
+input{
+    font-size: large;
+    width: 95%;
+    padding: 5px 0px 5px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e1ddde;
+    color: #3b3b3b; 
+}
+input[type=date]{
+    color: #a1a1a1;
+}
+::placeholder{
+    color: #a6a6a6;
+}
+
+.btn{
+    font-size: large;
+    align-content: center;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f26d7e;
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
+.btn:hover{
+    color: #f26d7e;
+    background-color: white;
+}
+
+#profiledisplay{
+    padding: 0;
+    display: block;
+    width: 12%;
+    border-radius: 50%;
+    z-index: 3;
+}
+#profileMark{
+    padding: 0;
+    display: block;
+    margin-top: -3%;
+    margin-left: 52%;
+    position : relative;
+    z-index: 4;
+    width: 3%;
+    border-radius: 50%;
+}
+
+/*for responsive */
+@media (min-width: 100px) { /*for phone*/
+    .loginblock{
+        width: 90%;
+        margin: 0 auto;
+    } 
+    img{
+        margin-top: 15px;
+    }
+}
+@media (min-width: 768px) { /*for ipad*/
+    .loginblock{
+        width: 60%;
+        margin: 0 auto;
+    } 
+    img{
+        margin-top: 15px;
+    }
+}
+@media (min-width: 1024px) { /*for desktop*/ 
+    .loginblock{
+        width: 400px;
+        margin: 0 auto;
+    } 
+    img{
+        margin-top: 15px;
+    }
+}
